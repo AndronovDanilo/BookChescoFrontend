@@ -1,0 +1,31 @@
+.header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--color-accent);
+}
+
+.nav a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.user-controls a + a {
+    margin-left: 10px;
+}
+
