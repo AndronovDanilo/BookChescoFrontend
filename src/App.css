@@ -1,167 +1,173 @@
-header {
+/* ===== HEADER ===== */
+.header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 15px 0;
+}
+
+.header-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 1vh 2vw;
-    align-items: center;
 }
-header img {
-    height: 40px;
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
-header nav {
-    display: flex;
-    gap: 1vw;
-    align-items: center;
+
+.logo span {
+    color: var(--color-accent);
 }
-header nav a {
-    text-decoration: none;
-    color: inherit;
-}
-header nav a:hover {
-    text-decoration: underline;
-}
-header nav button {
-    background-color: #cccccc;
-    border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    padding: 8px 14px;
-    border-radius: 6px;
+
+.nav a {
+    color: #fff;
+    margin: 0 10px;
     font-size: 14px;
-    cursor: pointer;
 }
-header nav button:hover {
-    background-color: #bbbbbb;
+
+.user-controls a + a {
+    margin-left: 10px;
 }
-main #searching{
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.search-form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 3vw;
+    background: var(--color-yellow);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
 }
-main #searching input{
-    flex: 0.4;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
+
+.search-form input,
+.search-form select {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    min-width: 150px;
 }
-.DataSelect {
-    background-color: #f1f1f1;
-    flex: 0.3;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    cursor: pointer;
-}
-.DataSelect:hover {
-    background-color: #e1e1e1;
-}
-.BlueButton {
-    background-color: #007bff;
+
+.search-form button {
+    background: var(--color-accent);
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 15px 25px;
     cursor: pointer;
-}
-.BlueButton:hover {
-    background-color: #0056b3;
+    font-weight: bold;
 }
 
-.HotelLists {
+.search-form button:hover {
+    background: #005999;
+}
+
+/* ===== DESTINATIONS & HOTELS ===== */
+section {
+    padding: 60px 0;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 0 10px 15px;
+    color: var(--color-gray);
+}
+
+.footer {
+    position: relative;
+    background: var(--color-primary);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-.HotelLists div {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.HotelLists ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    gap: 20px;
-
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.HotelLists ul {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.HotelLists li {
-    min-width: 200px;
-    flex: 0 0 auto;
-    background: #fafafa;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    scroll-snap-align: start;
-}
-
-.HotelLists li:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-.HotelLists li img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    background-color: #ddd;
-}
-
-.HotelLists li h3 {
-    margin: 6px 0;
-    font-size: 16px;
-    color: #444;
-}
-.HotelLists a {
-    text-decoration: none;
-}
-.HotelListsTitle {
-    max-width: 1200px;
-    margin: 40px auto 0 auto;
-    padding: 0 20px;
-}
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2vw 3vh;
-}
-footer a {
-    text-decoration: none;
-    color: inherit;
-}
-footer div {
-    display: flex;
-    gap: 2vw;
     align-items: center;
 }
-footer div img {
-    height: 100px;
+
+.footer .github-links {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer .github-links img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
 }

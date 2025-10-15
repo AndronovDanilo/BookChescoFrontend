@@ -3,75 +3,105 @@ import './App.css'
 function App() {
     return (
         <div className={"AppContainer"}>
-            <header>
-                <h1><strong>MyHotel</strong></h1>
-                <nav>
-                    <a href="#">Recently viewed</a>
-                    <a href="#">Favorites</a>
-                    <a href="#">
-                        <img src={"https://res.cloudinary.com/de11pqvgo/image/upload/v1759249153/GuestAvatar_q598lb.png"} alt={"Profile"}/>
-                    </a>
-                    <button>Menu</button>
-                </nav>
+            <header className="header">
+                <div className="container header-container">
+                    <div className="logo">Book<span>Chesco</span></div>
+                    <div className="user-controls">
+                        <a href="#" className="btn">Регистрация</a>
+                        <a href="#" className="btn">Войти</a>
+                    </div>
+                </div>
             </header>
 
-            <main>
-                <section id="searching">
-                    <input type="text" placeholder="Enter city or hotel"/>
-                    <button className={"DataSelect"}>Select dates</button>
-                    <button className={"BlueButton"}>Search</button>
-                </section>
+            <section className="hero">
+                <div className="container hero-container">
+                    <h1>Найдите подходящее жильё</h1>
+                    <p>Поиск отелей, домов и других вариантов проживания</p>
 
-                <h2 className={"HotelListsTitle"}>Hot hotel deals right now</h2>
+                    <form className="search-form">
+                        <input type="text" placeholder="Куда вы хотите поехать?"/>
+                        <input type="date"/>
+                        <input type="date"/>
+                        <select>
+                            <option>1 взрослый · 0 детей · 1 номер</option>
+                        </select>
+                        <button type="submit">Искать</button>
+                    </form>
+                </div>
+            </section>
 
-                <div className={"HotelLists"}>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href={"#"}>
-                                    <img
-                                        src="https://st2.depositphotos.com/1000975/11773/i/450/depositphotos_117733132-stock-photo-modern-hotel-room-with-big.jpg"
-                                        alt="Hotel 1"/>
-                                    <h3>Dubai</h3>
-                                    <h3>Price: 150$ / night</h3>
-                                </a>
-                            </li>
-                        </ul>
+            <section className="destinations container">
+                <h2>Популярные направления</h2>
+                <div className="grid">
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?paris" alt="Paris"/>
+                        <h3>Париж</h3>
+                        <p>10 230 объектов размещения</p>
+                    </div>
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?rome" alt="Rome"/>
+                        <h3>Рим</h3>
+                        <p>8 720 объектов размещения</p>
+                    </div>
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?london" alt="London"/>
+                        <h3>Лондон</h3>
+                        <p>12 540 объектов размещения</p>
+                    </div>
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?dubai" alt="Dubai"/>
+                        <h3>Дубай</h3>
+                        <p>9 310 объектов размещения</p>
                     </div>
                 </div>
+            </section>
 
-                <h2 className={"HotelListsTitle"}>Popular searches</h2>
-
-                <div className={"HotelLists"}>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href={"#"}>
-                                    <img
-                                        src="https://media.istockphoto.com/id/627892060/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BB%D1%8E%D0%BA%D1%81-%D0%BD%D0%BE%D0%BC%D0%B5%D1%80-%D0%BE%D1%82%D0%B5%D0%BB%D1%8F-%D1%81-%D0%B2%D0%B8%D0%B4%D0%BE%D0%BC.jpg?s=612x612&w=0&k=20&c=xrtKwGNcmnyfBMbZvJ8BGTzmaW40YZzO0XbrwTUDAyY="
-                                        alt="Hotel 1"/>
-                                    <h3>Paris</h3>
-                                    <h3>Price: 200$ / night</h3>
-                                </a>
-                            </li>
-                        </ul>
+            <section className="recommendations container">
+                <h2>Рекомендуемые отели</h2>
+                <div className="grid">
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?hotel" alt="Hotel"/>
+                        <h3>Hotel Royal</h3>
+                        <p>⭐ 9.1 Превосходно · Париж</p>
+                    </div>
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?resort" alt="Resort"/>
+                        <h3>Beach Resort</h3>
+                        <p>⭐ 8.7 Отлично · Дубай</p>
+                    </div>
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?apartment" alt="Apartment"/>
+                        <h3>Luxury Apartment</h3>
+                        <p>⭐ 9.4 Великолепно · Лондон</p>
+                    </div>
+                    <div className="card">
+                        <img src="https://source.unsplash.com/400x250/?villa" alt="Villa"/>
+                        <h3>Sunset Villa</h3>
+                        <p>⭐ 9.2 Превосходно · Рим</p>
                     </div>
                 </div>
-            </main>
+            </section>
 
-            <footer>
-                <div>
-                    <a href="#">About me</a>
-                    <a href="#">Help</a>
+            <footer className="footer">
+                <div className="container footer-container">
+                    <p>© 2025 Booking Clone. Все права защищены.</p>
+                    <nav className="footer-nav">
+                        <a href="https://t.me/AzumaLive">О нас</a>
+                        <a href="#">Служба поддержки</a>
+                        <a href="#">Конфиденциальность</a>
+                        <a href="#">Условия использования</a>
+                    </nav>
                 </div>
-                <div>
-                    <a href="https://github.com/AndronovDanilo/MyHotelFrontend" target="_blank" rel="noopener noreferrer">
-                    <img src="https://res.cloudinary.com/de11pqvgo/image/upload/v1759329103/GithubFrontEnd_cwdedj.png" alt="front"/>
+                <nav className="github-links">
+                    <a href="https://github.com/AndronovDanilo/BookChescoBackend" target="_blank" rel="noopener noreferrer">
+                        <img src="https://res.cloudinary.com/de11pqvgo/image/upload/v1760450828/GithubBackend_ppeccv_jlnqje.png"
+                             alt="GitHubBackEnd"/>
                     </a>
-                    <a href="https://github.com/AndronovDanilo/MyHotelBackend" target="_blank" rel="noopener noreferrer">
-                    <img src="https://res.cloudinary.com/de11pqvgo/image/upload/v1759329192/GithubBackend_ppeccv.png" alt="back"/>
+                    <a href="https://github.com/AndronovDanilo/BookChescoFrontend" target="_blank" rel="noopener noreferrer">
+                        <img src="https://res.cloudinary.com/de11pqvgo/image/upload/v1760450687/GithubFrontEnd_cwdedj_rm5e8z.png"
+                             alt="GitHubFrontEnd"/>
                     </a>
-                </div>
+                </nav>
             </footer>
         </div>
     )
