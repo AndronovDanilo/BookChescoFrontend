@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="container footer-container">
-                <p>© 2025 Booking Clone. All rights reserved.</p>
+                <p>© 2025 BookChesco. All rights reserved.</p>
                 <nav className="footer-nav">
                     <a href="https://t.me/AzumaLive">About Us</a>
                     <a href="#">Support</a>
