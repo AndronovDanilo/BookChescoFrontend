@@ -12,12 +12,16 @@ Vite — Fast build tool and development server
 ## Getting Started
 
 ### Installation  
-To install project dependencies, run:  
+To install project dependencies, run: 
+```bash
 npm install
-
+```
 ### Development Server  
 To start the development server, run:  
+```bash
 npm run dev
-
+```
 The application will be available at:  
+```bash
 http://localhost:5173
+```
