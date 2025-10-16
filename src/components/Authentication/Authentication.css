@@ -1,0 +1,113 @@
+.auth-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.auth-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    color: #888;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 1;
+}
+
+.auth-close:hover {
+    color: #0071c2;
+}
+
+.auth-container > div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    padding: 32px 28px 24px 28px;
+    min-width: 400px;
+    max-width: 480px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-container span[onClick] {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    font-size: 22px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.auth-container span[onClick]:hover {
+    color: #0071c2;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.auth-container input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.auth-container input:focus {
+    border: 1.5px solid #0071c2;
+}
+
+.auth-container button[type="submit"] {
+    background: #0071c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.auth-container button[type="submit"]:hover {
+    background: #005fa3;
+}
+
+.auth-container p {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #444;
+    text-align: center;
+}
+
+.auth-container p span {
+    color: #0071c2;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 4px;
+    transition: text-decoration 0.2s;
+}
+
+.auth-container p span:hover {
+    text-decoration: underline;
+}
