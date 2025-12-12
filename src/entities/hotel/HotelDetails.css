@@ -1,0 +1,35 @@
+.hotel-details-header {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.hotel-details-header h1 {
+    font-size: 28px;
+    color: var(--color-text-dark);
+    margin-bottom: 5px;
+}
+
+.location-info {
+    color: var(--color-gray);
+    margin-bottom: 20px;
+}
+
+.price-tag {
+    background: var(--color-background-light);
+    border: 1px solid var(--color-gray-light);
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.price-tag p {
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.price-tag strong {
+    font-size: 20px;
+    color: var(--color-primary);
+    font-weight: bold;
+}
