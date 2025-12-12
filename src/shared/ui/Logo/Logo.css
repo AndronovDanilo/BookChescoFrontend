@@ -1,0 +1,31 @@
+.logo-link {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    font-size: 24px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+.logo-accent {
+    color: var(--color-accent);
+}
+
+/* Dark theme logo (for light backgrounds) */
+.logo.logo-dark .logo-text {
+    color: var(--color-primary);
+}
+
+

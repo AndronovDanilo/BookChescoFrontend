@@ -1,0 +1,171 @@
+.booking-widget {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.booking-header {
+    background: #003580;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.booking-price {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.booking-period {
+    display: block;
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+.booking-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Success State */
+.booking-success {
+    padding: 32px 20px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.booking-success h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #166534;
+}
+
+.booking-success p {
+    color: #6b6b6b;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.booking-success .btn {
+    margin-top: 16px;
+}
+
+/* Form */
+.booking-form {
+    padding: 20px;
+}
+
+.booking-form .form-group {
+    margin-bottom: 16px;
+}
+
+.booking-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: none;
+    border-color: #0071c2;
+}
+
+.no-rooms-msg {
+    font-size: 12px;
+    color: #dc2626;
+    margin-top: 4px;
+}
+
+/* Error */
+.booking-error {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+/* Summary */
+.booking-summary {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #6b6b6b;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Submit */
+.booking-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+}
+
+.booking-hint {
+    text-align: center;
+    font-size: 13px;
+    color: #6b6b6b;
+    margin-top: 12px;
+}
+
+.booking-hint button {
+    background: none;
+    border: none;
+    color: #0071c2;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Info */
+.booking-info {
+    padding: 16px 20px;
+    background: #f0fdf4;
+    border-top: 1px solid #ddd;
+}
+
+.booking-info p {
+    font-size: 13px;
+    color: #166534;
+    margin: 4px 0;
+}
+
+
